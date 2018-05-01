@@ -1,0 +1,11 @@
+body{
+    background: url('../img/bkg_1.jpg') center fixed no-repeat;
+    background-size: cover;
+}
+
+.progress{
+
+    height:25px;
+    transition: 0.55s all ease-in-out;
+}
+

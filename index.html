@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G33K Sales Funnel Model</title>
+
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+
+    <!-- utility style -->
+    <link href="css/utility.css" rel="stylesheet" />
+
+    <!-- mainstyle -->
+    <link href="css/mainstyle.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="row"><!-- sub row 1 start-->
+
+                    <div class="col-md-6 mx-auto bkg-white extra-padding-50 text-center my-5"> <!-- sub col 1 start -->
+                        <h3>Does the SoPro model work for your business?</h3>
+                        <br/>
+                        <hr/>
+                        
+                        <div class="row"><!-- sub row 2 start -->
+                            
+                            <div class="col-md-3"><!-- input 1 start -->
+                                <p>Enter prospect universe</p>
+                                <input type="number" class="form-control" id="prospect-universe" placeholder="%" />
+                            </div><!-- input 1 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>Enter LEAD to PITCH Conversion</p>
+                                <input type="number" class="form-control" id="lead-to-pitch" placeholder="%" />
+                            </div><!-- input 2 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>Enter Pitch to Proposal Conversion</p>
+                                <input type="number" class="form-control" id="pitch-to-proposal" placeholder="%" />
+                                <!-- <p class="text-muted font-size-sm"><i class="fas fa-info-circle"></i> Pitch to Proposal</p> -->
+                            </div><!-- input 2 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>Enter desired PROPOSAL</p>
+                                <input type="number" class="form-control" id="proposal" placeholder="%" />
+                            </div><!-- input 2 end -->
+
+                        </div> <!-- sub row 2 end -->
+                        <br/>
+                        <hr/>
+                        <div class="row extra-padding-25"><!-- sub row 3 start -->
+                            
+                            <div class="col-md-3"><!-- input 1 start -->
+                                <p>SoPro Average</p>
+                                <input type="number" class="form-control" id="sopro-1" placeholder="%" value="62" disabled />
+                            </div><!-- input 1 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>SoPro Average</p>
+                                <input type="number" class="form-control" id="sopro-2" placeholder="%" value="44" disabled />
+                            </div><!-- input 2 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>SoPro Average</p>
+                                <input type="number" class="form-control" id="sopro-3" placeholder="%" value="22" disabled />
+                                
+                            </div><!-- input 2 end -->
+
+                            <div class="col-md-3"><!-- input 2 start -->
+                                <p>SoPro Average</p>
+                                <input type="number" class="form-control" id="sopro-4" placeholder="%" value="36" disabled />
+                            </div><!-- input 2 end -->
+
+
+                        </div> <!-- sub row 3 end -->
+
+                        <br/>
+                        <h3 class="text-center">Cost per</h3>
+                        <hr/>
+                        <div class="row"> <!-- sub row 4 start -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 1 -->
+                                Prospects engaged
+                                <br/>
+                                <br/>
+                                &pound;2
+                            </div> <!-- sub col 1 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 2 -->
+                                Opens
+                                <br/>
+                                <br/>
+                                &pound;4.94
+                            </div> <!-- sub col 2 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 3 -->
+                                Responses
+                                <br/>
+                                <br/>
+                                &pound;14.61
+                            </div> <!-- sub col 3 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 4 -->
+                                Leads
+                                <br/>
+                                <br/>
+                                &pound;39.58
+                            </div> <!-- sub col 4 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 5 -->
+                                Pitch
+                                <br/>
+                                <br/>
+                                &pound;79.17
+                            </div> <!-- sub col 5 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 6 -->
+                                Propose
+                                <br/>
+                                <br/>
+                                &pound;158.33
+                            </div> <!-- sub col 6 end -->
+
+                            <div class="col-md-2 extra-padding-25"> <!-- sub col 7 -->
+                                Close
+                                <br/>
+                                <br/>
+                                &pound;475
+                            </div> <!-- sub col 7 end -->
+
+
+                        </div> <!-- sub row 4 end -->
+                        
+                    </div> <!-- sub col 1 end -->
+
+                    <div class="col-md-6 extra-padding-50 text-center bkg-white-05 my-5"> <!-- sub col 2 start-->
+                        
+                        <!-- progress 1 -->
+                        <p class="text-uppercase font-weight-bold">Prospect universe</p>  
+                        <div class="progress" id="pbUniverse-big">
+                              
+                            <div class="progress-bar bg-info" id="pb-universe" role="progressbar" style="width: 100%;" aria-valuenow="10000" aria-valuemin="0" aria-valuemax="10000">10000</div>
+                        </div>
+
+                        <!-- progress 2 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Prospects engaged</p>  
+                        <div class="progress" id="pbEngaged-big">
+                              
+                            <div class="progress-bar bg-one" id="pb-engaged" role="progressbar" style="width: 95%;" aria-valuenow="9500" aria-valuemin="0" aria-valuemax="10000">9500</div>
+                        </div>
+
+                        <!-- progress 3 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Opens</p>  
+                        <div class="progress" id="pbOpens-big">
+                              
+                            <div class="progress-bar bg-two" id="pb-opens" role="progressbar" style="width: 40%;" aria-valuenow="4000" aria-valuemin="0" aria-valuemax="10000">4000</div>
+                        </div>
+
+                        <!-- progress 4 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Responses</p>  
+                        <div class="progress" id="pbResponses-big">
+                              
+                            <div class="progress-bar bg-three" id="pb-responses" role="progressbar" style="width: 33%;" aria-valuenow="3300" aria-valuemin="0" aria-valuemax="10000">3300</div>
+                        </div>
+
+                        <!-- progress 5 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Leads</p>  
+                        <div class="progress" id="pbLeads-big">
+                              
+                            <div class="progress-bar bg-four" id="pb-leads" role="progressbar" style="width: 33%;" aria-valuenow="3300" aria-valuemin="0" aria-valuemax="10000">3300</div>
+                        </div>
+
+                        <!-- progress 6 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Pitch</p>  
+                        <div class="progress" id="pbPitch-big">
+                              
+                            <div class="progress-bar bg-five" id="pb-pitch" role="progressbar" style="width: 33%;" aria-valuenow="3300" aria-valuemin="0" aria-valuemax="10000">3300</div>
+                        </div>
+
+                        <!-- progress 7 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Propose</p>  
+                        <div class="progress" id="pbPropose-big">
+                              
+                            <div class="progress-bar bg-six" id="pb-propose" role="progressbar" style="width: 33%;" aria-valuenow="3300" aria-valuemin="0" aria-valuemax="10000">3300</div>
+                        </div>
+
+                        <!-- progress 8 -->
+                        <br/>
+                        <p class="text-uppercase font-weight-bold">Close</p>  
+                        <div class="progress" id="pbClose-big">
+                              
+                            <div class="progress-bar bg-seven " id="pb-close" role="progressbar" style="width: 33%;" aria-valuenow="3300" aria-valuemin="0" aria-valuemax="10000">3300</div>
+                        </div>
+
+                    </div><!-- sub col 2 end -->
+
+
+                </div> <!-- sub row 1 end -->
+
+            </div> <!-- col end -->
+
+            
+        </div> <!-- row end -->
+
+    </div>
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script src="js/popper.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- custom scripts-->
+    <script src="js/soproControl.js"></script>
+</body>
+</html>
